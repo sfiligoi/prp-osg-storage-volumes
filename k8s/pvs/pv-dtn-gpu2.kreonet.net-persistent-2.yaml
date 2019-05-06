@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: pv-dtn-gpu2-kreonet-net-persistent-7
+  name: pv-dtn-gpu2-kreonet-net-persistent-2
   namespace: osg
 spec:
   capacity:
@@ -10,9 +10,9 @@ spec:
   accessModes:
   - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: local-persistent-7
+  storageClassName: local-persistent-2
   local:
-    path: /data/disk3
+    path: /data/disk2
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -20,7 +20,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - pv-dtn-gpu2-kreonet-net-persistent-7
+          - pv-dtn-gpu2-kreonet-net-persistent-2
 ---
 #
 # Initially assigned to prp-osg-head
@@ -28,7 +28,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-dtn-gpu2-kreonet-net-persistent-7
+  name: pvc-dtn-gpu2-kreonet-net-persistent-2
   namespace: osg
 spec:
   accessModes:
@@ -36,4 +36,4 @@ spec:
   resources:
     requests:
       storage: 10Gi
-  storageClassName: local-persistent-7
+  storageClassName: local-persistent-2
