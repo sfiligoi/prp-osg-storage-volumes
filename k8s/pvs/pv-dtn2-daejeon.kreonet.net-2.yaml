@@ -10,7 +10,7 @@ spec:
   accessModes:
   - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: local-persistent-2
+  storageClassName: local-scratch-2
   local:
     path: /data/disk2
   nodeAffinity:
