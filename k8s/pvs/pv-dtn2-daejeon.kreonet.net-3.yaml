@@ -36,4 +36,4 @@ spec:
   resources:
     requests:
       storage: 20Gi
-  storageClassName: local-persistent-3
+  storageClassName: local-scratch-3
