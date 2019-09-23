@@ -1,0 +1,112 @@
+#
+# Local persistent storage for node-bound services
+#
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-persistent-10
+# Local storage does not need a provisioner
+provisioner: kubernetes.io/no-provisioner
+# Give it out as-is
+reclaimPolicy: Retain
+# Important to bind ASAP, as any PersistentStorage is available to everyone until bound
+volumeBindingMode: Immediate
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-persistent-11
+# Local storage does not need a provisioner
+provisioner: kubernetes.io/no-provisioner
+# Give it out as-is
+reclaimPolicy: Retain
+# Important to bind ASAP, as any PersistentStorage is available to everyone until bound
+volumeBindingMode: Immediate
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-persistent-12
+# Local storage does not need a provisioner
+provisioner: kubernetes.io/no-provisioner
+# Give it out as-is
+reclaimPolicy: Retain
+# Important to bind ASAP, as any PersistentStorage is available to everyone until bound
+volumeBindingMode: Immediate
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-persistent-13
+# Local storage does not need a provisioner
+provisioner: kubernetes.io/no-provisioner
+# Give it out as-is
+reclaimPolicy: Retain
+# Important to bind ASAP, as any PersistentStorage is available to everyone until bound
+volumeBindingMode: Immediate
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-persistent-14
+# Local storage does not need a provisioner
+provisioner: kubernetes.io/no-provisioner
+# Give it out as-is
+reclaimPolicy: Retain
+# Important to bind ASAP, as any PersistentStorage is available to everyone until bound
+volumeBindingMode: Immediate
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-persistent-15
+# Local storage does not need a provisioner
+provisioner: kubernetes.io/no-provisioner
+# Give it out as-is
+reclaimPolicy: Retain
+# Important to bind ASAP, as any PersistentStorage is available to everyone until bound
+volumeBindingMode: Immediate
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-persistent-16
+# Local storage does not need a provisioner
+provisioner: kubernetes.io/no-provisioner
+# Give it out as-is
+reclaimPolicy: Retain
+# Important to bind ASAP, as any PersistentStorage is available to everyone until bound
+volumeBindingMode: Immediate
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-persistent-17
+# Local storage does not need a provisioner
+provisioner: kubernetes.io/no-provisioner
+# Give it out as-is
+reclaimPolicy: Retain
+# Important to bind ASAP, as any PersistentStorage is available to everyone until bound
+volumeBindingMode: Immediate
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-persistent-18
+# Local storage does not need a provisioner
+provisioner: kubernetes.io/no-provisioner
+# Give it out as-is
+reclaimPolicy: Retain
+# Important to bind ASAP, as any PersistentStorage is available to everyone until bound
+volumeBindingMode: Immediate
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-persistent-19
+# Local storage does not need a provisioner
+provisioner: kubernetes.io/no-provisioner
+# Give it out as-is
+reclaimPolicy: Retain
+# Important to bind ASAP, as any PersistentStorage is available to everyone until bound
+volumeBindingMode: Immediate
