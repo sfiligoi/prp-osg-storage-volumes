@@ -1,0 +1,295 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-bcache-1-ucsd-s41
+  namespace: cms-admin
+spec:
+  capacity:
+    storage: 100Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-scratch-41
+  local:
+    path: /e/1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          -  bcache-1.t2.ucsd.edu
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-bcache-1-ucsd-s41
+  namespace: cms-admin
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
+  storageClassName: local-scratch-41
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-bcache-1-ucsd-s42
+  namespace: cms-admin
+spec:
+  capacity:
+    storage: 100Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-scratch-42
+  local:
+    path: /e/2
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          -  bcache-1.t2.ucsd.edu
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-bcache-1-ucsd-s42
+  namespace: cms-admin
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
+  storageClassName: local-scratch-42
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-bcache-1-ucsd-s43
+  namespace: cms-admin
+spec:
+  capacity:
+    storage: 100Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-scratch-43
+  local:
+    path: /e/3
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          -  bcache-1.t2.ucsd.edu
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-bcache-1-ucsd-s43
+  namespace: cms-admin
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
+  storageClassName: local-scratch-43
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-bcache-1-ucsd-s44
+  namespace: cms-admin
+spec:
+  capacity:
+    storage: 100Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-scratch-44
+  local:
+    path: /e/4
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          -  bcache-1.t2.ucsd.edu
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-bcache-1-ucsd-s44
+  namespace: cms-admin
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
+  storageClassName: local-scratch-44
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-bcache-1-ucsd-s45
+  namespace: cms-admin
+spec:
+  capacity:
+    storage: 100Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-scratch-45
+  local:
+    path: /e/5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          -  bcache-1.t2.ucsd.edu
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-bcache-1-ucsd-s45
+  namespace: cms-admin
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
+  storageClassName: local-scratch-45
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-bcache-1-ucsd-s46
+  namespace: cms-admin
+spec:
+  capacity:
+    storage: 100Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-scratch-46
+  local:
+    path: /e/6
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          -  bcache-1.t2.ucsd.edu
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-bcache-1-ucsd-s46
+  namespace: cms-admin
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
+  storageClassName: local-scratch-46
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-bcache-1-ucsd-s47
+  namespace: cms-admin
+spec:
+  capacity:
+    storage: 100Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-scratch-47
+  local:
+    path: /e/7
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          -  bcache-1.t2.ucsd.edu
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-bcache-1-ucsd-s47
+  namespace: cms-admin
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
+  storageClassName: local-scratch-47
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-bcache-1-ucsd-s48
+  namespace: cms-admin
+spec:
+  capacity:
+    storage: 100Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-scratch-48
+  local:
+    path: /e/8
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          -  bcache-1.t2.ucsd.edu
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-bcache-1-ucsd-s48
+  namespace: cms-admin
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
+  storageClassName: local-scratch-48
