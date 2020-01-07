@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: pv-osg-houston-stashcache.nrp.internet2.edu-1
-  namespace: osg
+  namespace: osg-services
 spec:
   capacity:
     storage: 13Gi
