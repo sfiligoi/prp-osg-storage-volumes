@@ -28,8 +28,8 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pv-osg-houston-stashcache.nrp.internet2.edu-2
-  namespace: osg
+  name: pvc-osg-houston-stashcache.nrp.internet2.edu-2
+  namespace: osg-services
 spec:
   accessModes:
   - ReadWriteOnce
