@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-osg-stashcache.t2.ucsd.edu-5
+  namespace: osg-services
+spec:
+  capacity:
+    storage: 13Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-persistent-5
+  local:
+    path: /data5
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          -  stashcache.t2.ucsd.edu
+---
+#
+# Initially assigned to	prp-stashcache-houston
+#
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-osg-stashcache.t2.ucsd.edu-5
+  namespace: osg-services
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 13Gi
+  storageClassName: local-persistent-5
