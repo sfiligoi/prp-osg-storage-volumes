@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-fiona-r-uva.vlan7.uvalight.net-0
+  namespace: osg-services
+spec:
+  capacity:
+    storage: 20Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-persistent-0
+  local:
+    path: /tank1
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          -  fiona-r-uva.vlan7.uvalight.net
+---
+#
+# Initially assigned to	fiona-r-uva.vlan7.uvalight.net
+# AKa Universtiy of Amsterdam Stashcache
+#
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-fiona-r-uva.vlan7.uvalight.net-0
+  namespace: osg-services
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+  storageClassName: local-persistent
