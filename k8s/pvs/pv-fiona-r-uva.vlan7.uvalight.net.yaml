@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: pv-dtn2-daejeon-kreonet-net-2
+  name: pv-fiona-r-uva.vlan7.uvalight.net-0
   namespace: osg-services
 spec:
   capacity:
@@ -10,9 +10,9 @@ spec:
   accessModes:
   - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: local-scratch-2
+  storageClassName: local-persistent-0
   local:
-    path: /data/disk2
+    path: /tank1
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -20,15 +20,16 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - dtn2-daejeon.kreonet.net
+          -  fiona-r-uva.vlan7.uvalight.net
 ---
 #
-# Initially assigned to prp-osg-head
+# Initially assigned to	fiona-r-uva.vlan7.uvalight.net
+# AKa Universtiy of Amsterdam Stashcache
 #
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-dtn2-daejeon-kreonet-net-2
+  name: pvc-fiona-r-uva.vlan7.uvalight.net-0
   namespace: osg-services
 spec:
   accessModes:
@@ -36,4 +37,4 @@ spec:
   resources:
     requests:
       storage: 20Gi
-  storageClassName: local-scratch-2
+  storageClassName: local-persistent
