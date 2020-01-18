@@ -36,4 +36,4 @@ spec:
   resources:
     requests:
       storage: 13Gi
-  storageClassName: local-persistent
+  storageClassName: local-persistent-0
