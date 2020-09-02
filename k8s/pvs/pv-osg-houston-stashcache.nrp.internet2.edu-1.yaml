@@ -12,7 +12,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: local-persistent-1
   local:
-    path: /tank1
+    path: /tank
   nodeAffinity:
     required:
       nodeSelectorTerms:
