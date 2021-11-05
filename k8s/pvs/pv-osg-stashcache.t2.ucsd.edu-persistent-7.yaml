@@ -5,7 +5,7 @@ metadata:
   namespace: cms-admin
 spec:
   capacity:
-    storage: 13Gi
+    storage: 9.1Ti
   volumeMode: Filesystem
   accessModes:
   - ReadWriteOnce
@@ -35,5 +35,5 @@ spec:
   - ReadWriteOnce
   resources:
     requests:
-      storage: 13Gi
+      storage: 9.1Ti
   storageClassName: local-persistent-7
