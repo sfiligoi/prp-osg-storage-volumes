@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: pv-osg-stashcache.t2.ucsd.edu-7
-  namespace: osg-services
+  namespace: cms-admin
 spec:
   capacity:
     storage: 13Gi
@@ -29,7 +29,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: pvc-osg-stashcache.t2.ucsd.edu-7
-  namespace: osg-services
+  namespace: cms-admin
 spec:
   accessModes:
   - ReadWriteOnce
